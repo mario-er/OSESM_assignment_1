@@ -72,7 +72,7 @@ def check_return_datatype(data):
     else:
         raise TypeError("Input data type not supported. Please provide a list, a pd.Series, or a np.ndarray.")
 
-    return data, output_format
+    return output, output_format
 
 
 if __name__ == '__main__':
