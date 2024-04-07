@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 import pandas as pd
-from preprocessing import *
+from preprocessing import scale_min_max, invert_scale_min_max
 
 # class MyTestCase(unittest.TestCase):
 #     def test_something(self):
