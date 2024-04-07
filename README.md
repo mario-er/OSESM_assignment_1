@@ -23,6 +23,5 @@ Invitation to collaborate due by Monday, April 7, 23:59 (please do not push any 
 
 repository with functins for data preprocessing for time-series forecasting tasks:
 
-- min_max_scale()	# function to scale between 0 and 1: x_ = (x - x_min) / (x_max - x_min)  
-- normalize()		# normalization by subtracting mean and dividing by std to get a mean of 0 and a std of 1: x_ = (x - mean) / std  
-- windows() 		# function to get nested lists for serving time-series models  
+  - scale_min_max()         # function to scale between 0 and 1: x_ = (x - x_min) / (x_max - x_min)  
+  - invert_scale_min_max()  # function to invert scale between 0 and 1 to get the original data
