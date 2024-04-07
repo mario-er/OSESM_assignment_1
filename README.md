@@ -5,7 +5,7 @@ Mario Ernst
 
 ______________________________________________________________________________________________________________________
 
-Homework assignment
+Homework assignment  
 • Start a new GitHub repository, add a license and a code-quality linter (e.g., ruff)  
 • Add functions or small features from any real-life project relevant to your work or interests  
 • The codebase should include 2-4 functions, 20-40 lines of code including documentation  
