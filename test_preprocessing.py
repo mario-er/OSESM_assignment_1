@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 import pandas as pd
-from preprocessing import scale_min_max, invert_scale_min_max
+from preprocessing import scale_min_max, invert_scale_min_max, check_return_datatype
 
 # class MyTestCase(unittest.TestCase):
 #     def test_something(self):
@@ -40,6 +40,24 @@ class TestInvertScaleData(unittest.TestCase):
         scaled_data_array = invert_scale_min_max(data_array, 1, 5)
         self.assertTrue(np.allclose(scaled_data_array, [1, 2, 3, 4, 5]))
 
+
+class TestCheckReturnDatatype(unittest.TestCase):
+    def test_input_list(self):
+        """Test that the function works with list input."""
+        self.assertTrue(check_return_datatype([1, 2, 3, 4, 5]))
+
+    def test_input_ndarray(self):
+        """Test that the function works with np.ndarray input."""
+        self.assertTrue(check_return_datatype(np.array([1, 2, 3, 4, 5])))
+
+    def test_input_series(self):
+        """Test that the function works with np.ndarray input."""
+        self.assertTrue(check_return_datatype(pd.Series([1, 2, 3, 4, 5])))
+
+    def test_input_failure(self):
+        """Test that the function raises TypeError for invalid input types."""
+        with self.assertRaises(TypeError):
+            check_return_datatype((1, 2, 3, 4, 5))
 
 if __name__ == '__main__':
     unittest.main()

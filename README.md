@@ -1,9 +1,9 @@
 open-source energy system modeling - 1st assignment
-______________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________
 
 Mario Ernst
 
-______________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________
 
 Homework assignment  
 • Start a new GitHub repository, add a license and a code-quality linter (e.g., ruff)  
@@ -21,7 +21,18 @@ Invitation to collaborate due by Monday, April 7, 23:59 (please do not push any 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-repository with functins for data preprocessing for time-series forecasting tasks:
+repository with functions for data preprocessing for time-series forecasting tasks:
+  - scale_min_max()         # function to scale data between 0 and 1: x_ = (x - x_min) / (x_max - x_min)  
+  - invert_scale_min_max()  # function to invert scale transformation between 0 and 1 to get the original data
+  - check_return_datatype() # function to check and return the input datatype in scale and invert scale function
 
-  - scale_min_max()         # function to scale between 0 and 1: x_ = (x - x_min) / (x_max - x_min)  
-  - invert_scale_min_max()  # function to invert scale between 0 and 1 to get the original data
+Functions are defined in preprocessing.py. A test scenario is prepared in the main section of preprocessing.py to show
+functionality of the functions. Unit tests for all functions for different input data types (list, pd, np)
+are prepared in test_preprocessing.py by using the unittest library. For check_return_datatype() the unit test also 
+tests if TypeError is raised if e.g. a tupel is used as input
+
+ruff package is used for code-quality linter. Linter check is possible by typing "ruff check" in command line
+
+Scripts can be started in Terminal by "python .\preprocessing.py" or "python .\test_preprocessing.py" when current
+working directory is the OSESM_assignment_1 repository.
+
