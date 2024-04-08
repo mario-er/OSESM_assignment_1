@@ -31,11 +31,9 @@ functionality of the functions. Unit tests for all functions for different input
 are prepared in test_preprocessing.py by using the unittest library. For check_return_datatype() the unit test also 
 tests if TypeError is raised if e.g. a tupel is used as input
 
-pytest.yml is used as workflow action to test pushes and pull-requests
+pytest.yml is used as workflow action to test pushes and pull-requests  
 
-ruff package is used for code-quality linter. Linter check is possible by typing "ruff check" in command line
+ruff package is used for code-quality linter. Linter check is possible by typing "ruff check" in command line  
 ruff is also included in workflow actions as ruff_lint.yml
 
-Scripts can be started in Terminal by "python .\preprocessing.py" or "python .\test_preprocessing.py" when current
-working directory is the OSESM_assignment_1 repository.
 
