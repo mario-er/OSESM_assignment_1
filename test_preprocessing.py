@@ -22,7 +22,8 @@ class TestScaleData(unittest.TestCase):
     def test_numpy_array_input(self):
         data_array = np.array([1, 2, 3, 4, 5])
         scaled_data_array = scale_min_max(data_array)
-        self.assertTrue(np.allclose(scaled_data_array, [0.0, 0.25, 0.5, 0.75, 1.0]))
+        # self.assertTrue(np.allclose(scaled_data_array, [0.0, 0.25, 0.5, 0.75, 1.0]))
+        self.assertTrue(np.allclose(scaled_data_array, [0.0, 0.25, 0.5, 0.75, 2.0]))  # test-case for wf action
 
 class TestInvertScaleData(unittest.TestCase):
     def test_list_input(self):
