@@ -1,7 +1,7 @@
 open-source energy system modeling - 1st assignment
 ________________________________________________________________________________________________________________________
 
-Mario Ernst  // Test GitHub-Actions Bernahrd Mair
+Mario Ernst  // Test GitHub-Actions Bernhard Mair
 
 ________________________________________________________________________________________________________________________
 
