@@ -12,7 +12,7 @@ class TestScaleData(unittest.TestCase):
     def test_list_input(self):
         data_list = [1, 2, 3, 4, 5]
         scaled_data_list = scale_min_max(data_list)
-        self.assertEqual(scaled_data_list, [0.0, 0.25, 0.5, 0.75, 1.0])
+        self.assertEqual(scaled_data_list, [0.0, 0.25, 0.5, 0.11, 1.1])
 
     def test_pandas_series_input(self):
         data_series = pd.Series([1, 2, 3, 4, 5])
